@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNext Startup - আপনার ভবিষ্যৎ সমাধান</title>
+  <style>
+    /* Reset & General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      color: #333;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4A90E2;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #4A90E2;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 140px 20px 80px;
+      text-align: center;
+      background: linear-gradient(135deg, #4A90E2 0%, #50E3C2 100%);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ffffff;
+      color: #4A90E2;
+      padding: 12px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Features Section */
+    .features {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .feature-card h3 {
+      margin-bottom: 15px;
+      color: #4A90E2;
+    }
+
+    /* Form Section */
+    .contact-section {
+      background: #ffffff;
+      padding: 80px 20px;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #f8f9fa;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: #4A90E2;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .submit-btn:hover {
+      background: #357ABD;
+    }
+
+    .status-message {
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">TechNext</div>
+      <ul class="nav-links">
+        <li><a href="#home">হোম</a></li>
+        <li><a href="#features">সুবিধাসমূহ</a></li>
+        <li><a href="#contact">যোগাযোগ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>আপনার ব্যবসাকে নিয়ে যান পরবর্তী ধাপে</h1>
+    <p>আমরা প্রদান করছি অত্যাধুনিক ডিজিটাল সার্ভিস যা আপনার স্টার্টআপকে করবে আরও সফল ও দ্রুতগামী।</p>
+    <a href="#contact" class="btn">এখনই শুরু করুন</a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="feature-card">
+      <h3>দ্রুতগতিসম্পন্ন</h3>
+      <p>আমাদের সেবা অত্যন্ত দ্রুত ও নিরবচ্ছিন্ন পারফরম্যান্স নিশ্চিত করে।</p>
+    </div>
+    <div class="feature-card">
+      <h3>নিরাপদ প্ল্যাটফর্ম</h3>
+      <p>আপনার ডাটা এবং তথ্যের সর্বোচ্চ সুরক্ষা প্রদান আমাদের মূল লক্ষ্য।</p>
+    </div>
+    <div class="feature-card">
+      <h3>২৪/৭ সাপোর্ট</h3>
+      <p>যেকোনো প্রয়োজনে আমাদের সাপোর্ট টিম ২৪ ঘণ্টা আপনার সেবায় নিয়োজিত।</p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="contact-section" id="contact">
+    <div class="form-container">
+      <h2>আমাদের সাথে যুক্ত হন</h2>
+      <form id="google-sheet-form">
+        <div class="form-group">
+          <label for="name">আপনার নাম</label>
+          <input type="text" id="name" name="name" required placeholder="আপনার নাম লিখুন">
+        </div>
+        <div class="form-group">
+          <label for="email">ইমেইল ঠিকানা</label>
+          <input type="email" id="email" name="email" required placeholder="example@mail.com">
+        </div>
+        <div class="form-group">
+          <label for="message">বার্তা / মন্তব্য</label>
+          <textarea id="message" name="message" required placeholder="আপনার মতামত লিখুন..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submit-btn">সাবমিট করুন</button>
+        <div class="status-message" id="status-message"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; ২০২৬ TechNext Startup। সর্বস্বত্ব সংরক্ষিত।</p>
+  </footer>
+
+  <!-- JavaScript Code -->
+  <script>
+    // এখানে আপনার Google Apps Script Deploy URL টি বসান
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwqxQu9xRUWAVU0REkXHgZvrsw2asDd5CBIJCLkMHmMv25JbJbt-wKEfp4ZrrNyPGtg9g/exec';
+
+    const form = document.getElementById('google-sheet-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const statusMessage = document.getElementById('status-message');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      // বাটনের টেক্সট পরিবর্তন ও ডিসেবল করা
+      submitBtn.disabled = true;
+      submitBtn.innerText = 'পাঠানো হচ্ছে...';
+      statusMessage.style.color = '#333';
+      statusMessage.innerText = '';
+
+      const formData = {
+        name: form.name.value,
+        email: form.email.value,
+        message: form.message.value
+      };
+
+      fetch(scriptURL, {
+        method: 'POST',
+        mode: 'no-cors', // CORS ইস্যু এড়াতে no-cors ব্যবহার করা হয়েছে
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => {
+        statusMessage.style.color = 'green';
+        statusMessage.innerText = 'ধন্যবাদ! আপনার তথ্য সফলভাবে জমা হয়েছে।';
+        submitBtn.disabled = false;
+        submitBtn.innerText = 'সাবমিট করুন';
+        form.reset(); // ফর্ম ফাঁকা করে দেওয়া
+      })
+      .catch(error => {
+        statusMessage.style.color = 'red';
+        statusMessage.innerText = 'দুঃখিত! কোনো সমস্যা হয়েছে। আবার চেষ্টা করুন।';
+        submitBtn.disabled = false;
+        submitBtn.innerText = 'সাবমিট করুন';
+        console.error('Error!', error.message);
+      });
+    });
+  </script>
+</body>
+</html>
